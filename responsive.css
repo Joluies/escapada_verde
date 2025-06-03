@@ -1,0 +1,276 @@
+/* Responsive */
+@media (max-width: 992px) {
+    .header{
+        padding: 1rem 3%;
+    }
+    .navbar ul{
+      gap: 1.5rem;
+    }
+    .navbar a{
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .hero-content{
+  position: absolute;
+  padding-top: 20rem;
+  margin: 3rem;
+  text-align: center;
+  color: var(--ladrillo);
+}
+    .hero-content h1{
+font-family: "Quicksand", sans-serif;
+font-size: 4.5rem;
+padding-bottom: 2rem;
+}
+.hero-content span{
+  font-family: "Quicksand", sans-serif;
+color: var(--verde);
+}
+.hero-content p{
+font-size: 2.5rem;
+font-weight: 500;
+color: var(--verde2);
+padding-bottom: 3.5rem;
+}
+.btn{
+  font-size: 2rem;
+  color: var(--color-text-alter);
+}
+.btn:hover{
+  background: var(--verde);
+}
+
+/*conocenos*/
+.conocenos h2{
+  padding-top: 1.7rem;
+  font-size: 2.5rem;
+}
+.conocenos p{
+font-size: 1.5rem;
+}
+.video{
+  display: block;
+  
+}
+.video iframe{
+    width: 450px;
+  height: 240px;
+  padding-bottom: 1rem;
+  border: none;
+}
+
+/*servicios*/
+.servicios{
+  height: 1050px;
+}
+ .beneficios {
+    grid-template-columns: repeat(2, 1fr); /* En tablets: 2 columnas */
+  }
+.img-container{
+ height: 280px;        
+}
+.overlay h3 {
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+  .overlay p {
+    font-size: 1.2rem;
+}
+/* Testimonios */
+.testimonios {
+  height: 1550px;
+}
+
+.testimonios h4{
+font-size: 2.8rem;
+}
+.testimonials-grid{
+  grid-template-columns: 1fr;
+}
+.user_cards{
+  position: relative;
+  height: 430px;
+  padding: 1rem 0.5rem 0.5rem;
+}
+.user_cards::before{
+  width: 31%;
+}
+.user_cards span{
+  font-size: 2rem;
+}
+.user_cards h3{
+  font-size: 1.5rem;
+}
+.user_cards img{
+  max-width: 120px;
+}
+
+.user_cards:hover::before{
+  width: 1600px;
+}
+/*contacto*/
+.contacto{
+  height: 750px;
+}
+.contenido{
+  grid-template-columns: repeat(2, 1fr); 
+margin: 0 auto;
+}
+}
+
+/*------   Mobiles  -----*/
+
+@media (max-width: 768px) {
+  .header{
+        padding: 1.3rem 3%;
+    }
+    .logo{
+      font-size: 1.7rem;
+    }
+    .icons{
+        display: inline-flex;
+        font-size: 2rem;
+    }
+    #check:checked~.icons #menu-icon-open{
+     display: none;   
+    }
+    .icons #menu-icon-close{
+        display: none;
+    }
+    #check:checked~.icons #menu-icon-close{
+     display: block;   
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+        transition: 0.5s ease;
+        overflow: hidden;
+    }
+    #check:checked~.navbar{
+     height: 15rem; 
+    }
+    .navbar ul{
+        display: block;
+        text-align: center;
+        margin-top: 2.5rem; 
+    }
+    .navbar li{
+        margin: 1rem 0;
+    }
+    .navbar a{
+        font-size: 1.3rem;
+        display: inline-block;
+        transform: translateY(-50px);
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+
+    /* hero-content */
+    .hero-content{
+  padding-top:15rem;
+  margin: 1.5rem;
+  text-align: center;
+  color: var(--ladrillo);
+}
+    .hero-content h1{
+font-family: "Quicksand", sans-serif;
+font-size: 2.5rem;
+}
+.hero-content p{
+font-size: 1.5rem;
+font-weight: 500;
+color: var(--verde2);
+padding-bottom: 2rem;
+}
+.btn{
+  padding: 0.8rem 3.5rem;
+  gap: 2rem;
+  font-size: 1.8rem;
+}
+.secondary-btn{
+  margin-top: 2rem;
+  padding: 0.8rem 5.1rem;
+}
+.btn:hover{
+  background: var(--verde);
+}
+
+/*conocenos*/
+.conocenos h2{
+  padding-top: 1.7rem;
+  font-size: 2rem;
+}
+.conocenos p{
+font-size: 1.2rem;
+}
+.video iframe{
+    width: 370px;
+  height: 230px;
+  padding-bottom: 1rem;
+}
+
+/*servicios*/
+.servicios{
+  height: 1450px;
+}
+ .beneficios {
+    grid-template-columns: 1fr; /* En celulares: 1 columna */
+  }
+.img-container{
+ height: 250px;        
+}
+
+/* Testimonios */
+.testimonios {
+  height: 1680px;
+}
+.testimonios h4{
+font-size: 2rem;
+}
+.user_cards{
+  position: relative;
+  height: 430px;
+  padding: 0.4rem 0.3rem 0.3rem;
+}
+.user_cards::before{
+  width: 41%;
+}
+.user_cards span{
+  font-size: 1.7rem;
+}
+.user_cards h3{
+  font-size: 1.5rem;
+}
+.user_cards p{
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.user_cards img{
+  max-width: 120px;
+}
+
+.user_cards:hover::before{
+  width: 1600px;
+}
+/*contacto*/
+.contacto{
+  height: 1080px;
+  justify-content: center;
+}
+.contenido{
+  grid-template-columns: 1fr; 
+margin:0 auto;
+
+}
+}

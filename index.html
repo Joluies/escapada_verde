@@ -4,85 +4,184 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
-    <title>ESCPADA VERDE | TRAVEL</title>
+    <title>ESCAPADA VERDE | TRAVEL</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-<header class="hero" id="inicio">
-    <div class="overlay">
-        <nav class="navbar" role="navigation" aria-label="Menú principal">
+    <header id="home">
+        <div class="header">
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class="fa-solid fa-bars" id="menu-icon-open"></i>
+                <i class="fa-solid fa-circle-xmark" id="menu-icon-close"></i>
+            </label>
             <a href="#inicio" class="logo">
-                <img src="./img/icono.png" alt="Logo Escapada Verde">
+                <img src="./img/logo_escapada-verde.png" alt="Logo Escapada Verde">
                 escapada <span>verde</span>
             </a>
-            <button class="hamburger-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="menu">
-                <li><a href="#features">Características</a></li>
-                <li><a href="#testimonials">Testimonios</a></li>
-                <li><a href="#cta">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
+            <nav class="navbar" aria-label="Menú principal">
+                <ul>
+                    <li><a href="#home" style="--i:0">Inicio</a></li>
+                    <li><a href="#about" style="--i:1">Conócenos</a></li>
+                    <li><a href="#service" style="--i:2">Servicios</a></li>
+                    <li><a href="#testimonials" style="--i:3">Testimonios</a></li>
+                    <li><a href="#cta" style="--i:4">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero-content">
             <h1>Vive la experiencia Escapada <span>Verde</span> </h1>
             <p>Desconéctate de la ciudad y conéctate con la naturaleza.</p>
             <button class="btn primary-btn">Reservar ahora</button>
             <button class="btn secondary-btn">Saber más</button>
-        </div>
-    </div>
-</header>
-<main>
-        <section id="conocenos" class="conocenos">
+        </section>
+    </header>
+    <main>
+        <section id="about" class="conocenos">
             <h2>Conócenos</h2>
-            <p>Somos un equipo apasionado por la tecnología y la innovación.</p>
+            <p>Somos un equipo apasionado por la Naturaleza y la Relajacion.</p>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video"
-                    frameborder="0"
+                <iframe src="https://www.youtube.com/embed/0W7x5YoDyTs?si=Kn2VAsnDzwICcVFI&amp;start=5"
+                    title="YouTube video" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
+                <iframe src="https://www.youtube.com/embed/MSnxgB7q9e4?si=lVUGc_AssZKmH6FQ&amp;controls=0&amp;start=30"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
         </section>
-
-        <section id="servicios" class="servicios">
+        <section id="service" class="servicios">
             <h2>Servicios</h2>
             <div class="beneficios">
-                <div class="beneficio">
-                    <span>✅</span>
-                    <p>Asesoría personalizada</p>
+                <div class="beneficio-card">
+                    <div class="img-container">
+                        <img src="./img/cabañas.jpg" alt="">
+                        <div class="overlay">
+                            <h3><i class="fa-solid fa-campground"></i> Eco-lodges</h3>
+                            <p>Construidos con materiales sostenibles.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="beneficio">
-                    <span>⚙️</span>
-                    <p>Automatización de procesos</p>
+                <div class="beneficio-card">
+                    <div class="img-container">
+                        <img src="./img/habitaciones.jpg" alt="">
+                        <div class="overlay">
+                            <h3><i class="fa-solid fa-person-booth"></i> Habitaciones Amplias</h3>
+                            <p>Terrazas privadas, jacuzzis al aire libre, iluminación tenue, ropa de cama de alta
+                                calidad.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="beneficio">
-                    <span>💡</span>
-                    <p>Soluciones innovadoras</p>
+                <div class="beneficio-card">
+                    <div class="img-container">
+                        <img src="./img/picinas.jpg" alt="">
+                        <div class="overlay">
+                            <h3><i class="fa-solid fa-person-swimming"></i> Áreas Comunes</h3>
+                            <p>Salas lounge al aire libre, comedor orgánico, zonas de fogata y espacios para yoga.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="beneficio">
-                    <span>📈</span>
-                    <p>Mejora continua</p>
+                <div class="beneficio-card">
+                    <div class="img-container">
+                        <img src="./img/eco_pack.jpg" alt="">
+                        <div class="overlay">
+                            <h3><i class="fa-solid fa-boxes-packing"></i> Kit de Bienvenida</h3>
+                            <p>Con productos ecológicos (repelente, bloqueador, snacks artesanales).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="beneficio-card">
+                    <div class="img-container">
+                        <img src="./img/transporte.webp" alt="">
+                        <div class="overlay">
+                            <h3><i class="fa-solid fa-car-side"></i> Transporte Privado</h3>
+                            <p>Desde Lima en vans ejecutivas o autos eléctricos.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="testimonios" class="testimonios">
+        <section id="testimonials" class="testimonios">
             <h2>Testimonios</h2>
-            <p>"Excelente servicio, superaron nuestras expectativas."</p>
-            <p>"El equipo fue muy profesional y entregó todo a tiempo."</p>
+            <h4>Lo que dicen nuestros clientes</h4>
+            <div class="testimonials-grid">
+                <div class="user_cards">
+                    <span><i class="fa-solid fa-quote-left"></i></span>
+                    <h3>Escapada Romántica</h3>
+                    <p>“Queríamos desconectar del estrés de la ciudad y Escapada Verde fue el lugar perfecto. Nos
+                        alojamos en una cabaña rodeada de árboles, con vista al río. La tranquilidad del lugar y el
+                        trato del personal hicieron que nuestra escapada fuera mágica.”</p>
+                    <img src="./img/testimonio1.jpeg" alt="testimonio_1">
+                    <h5>— Andrés y Camila —</h5>
+                </div>
+                <div class="user_cards">
+                    <span><i class="fa-solid fa-quote-left"></i></span>
+                    <h3>Me encanta la simplicidad</h3>
+                    <p>“Nuestra experiencia en Escapada Verde fue inolvidable. Viajamos en familia y disfrutamos de cada
+                        momento: desde las caminatas por los senderos naturales hasta la fogata al anochecer. Mis hijos
+                        se conectaron con la naturaleza como nunca antes. ¡Volveremos sin duda!”</p>
+                    <img src="./img/testimonio2.jpg" alt="testimonio_1">
+                    <h5>— Monica Lucia —</h5>
+                </div>
+                <div class="user_cards">
+                    <span><i class="fa-solid fa-quote-left"></i></span>
+                    <h3>Conexión y Bienestar</h3>
+                    <p>“Encontré en Escapada Verde un espacio para reconectar conmigo misma. Las sesiones de yoga al
+                        aire libre y la alimentación natural me ayudaron a recargar energías. Es un lugar que combina
+                        paz, belleza y conciencia ecológica. ¡100% recomendado!”</p>
+                    <img src="./img/testimonio3.jpg" alt="testimonio_1">
+                    <h5>— Daniela Rubi —</h5>
+                </div>
+            </div>
+        </section>
+        <section id="cta" class="contacto">
+            <div class="contenido">
+                <div class="column_contenido">
+                    <h3>Encuentranos:</h3>
+                    <h4>En el Gran Terminal Plaza Norte</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.552672675888!2d-77.05811777541093!3d-12.005423891131432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf02700e7399%3A0x3c314bd8bc950460!2sGran%20Terminal%20Terrestre!5e0!3m2!1ses!2spe!4v1748954263205!5m2!1ses!2spe"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="column_contenido">
+                    <h3>Contáctanos</h3>
+                    <h4>Escribenos un Mensajito</h4>
+                    <form>
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <textarea placeholder="Tu mensaje" required></textarea>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <div class="column_contenido">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer id="contacto">
-        <p>Contacto: info@ejemplo.com</p>
-        <p>Teléfono: +51 999 888 777</p>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__copy">
+                <i class="fa-regular fa-registered"></i> Todos los derechos reservados. Hecho con <i
+                    class="fa-regular fa-heart fa-beat-fade" style="color: #ff0000;"></i> por Js
+            </div>
     </footer>
 
-    <script src="script.js"></script>
+  
+    <script src="https://kit.fontawesome.com/ede8c06b05.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
